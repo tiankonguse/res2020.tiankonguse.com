@@ -15,7 +15,7 @@ future: true
 
 include: [".htaccess"]
 exclude: ["README.md", ".git", ".svn"]
-keep_files: ["/static/"]
+keep_files: ["/static/","/images","/project","/doc","/develop","/news"]
 encoding : utf-8
 markdown_ext: "md"
 textile_ext:  "textile"
