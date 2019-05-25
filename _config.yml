@@ -4,9 +4,9 @@ source:      .
 destination: ./_site
 #plugins:     ./_plugins
 #Configuration Error: You specified the `plugins` config in your configuration file as a string, please use an array instead. If you wanted to set the directory of your plugins, use the config key `plugins_dir` instead.
-plugins_dir:     ./_plugins
-layouts:     ./_layouts
-data_source: ./_data
+#plugins_dir:     ./_plugins
+#layouts:     ./_layouts
+#data_source: ./_data
 future: true
 #collections: null
 
@@ -15,7 +15,7 @@ future: true
 
 include: [".htaccess"]
 exclude: ["README.md", ".git", ".svn"]
-keep_files: ["/static/","/images","/project","/doc","/develop","/news"]
+keep_files: ["/static/","/images/","/project/","/doc/","/develop/","/news/"]
 encoding : utf-8
 markdown_ext: "md"
 textile_ext:  "textile"
@@ -96,22 +96,8 @@ defaults: []
 author : tiankonguse
 title: kiki home
 description : 这是 kiki's home。
-feed: /atom.xml
 author_info: <a href="http://res.tiankonguse.com">kiki</a>
 tagline: Site Tagline 
-categories_path: /categories.html
-tags_path : /tags.html
 
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/atom.xml"
-        - "/feed.xml"
-        - "/feed/index.xml"
-    include_posts:
-        - "/index.html"
-    change_frequency_name: "change_frequency"
-    priority_name: "priority"
-  
-  
+
 no_load_relate_post : 1
